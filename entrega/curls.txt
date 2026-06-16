@@ -1,10 +1,72 @@
-# Pegar aquí la salida de los 3 curl del Lab 3
+====================================================================
+GET /poleras
+====================================================================
+curl https://abc123xyz.execute-api.us-east-1.amazonaws.com/prod/poleras
+{
+  "poleras": [
+    {
+      "archivo": "argentina.svg",
+      "url": "https://mundial-poleras-flores.s3.amazonaws.com/poleras/argentina.svg"
+    },
+    {
+      "archivo": "brasil.svg",
+      "url": "https://mundial-poleras-flores.s3.amazonaws.com/poleras/brasil.svg"
+    }
+  ],
+  "total": 2
+}
 
-## GET /poleras
+====================================================================
+GET /partidos
+====================================================================
+curl https://abc123xyz.execute-api.us-east-1.amazonaws.com/prod/partidos
+{
+  "partidos": [
+    {
+      "id": "partido-004",
+      "estadio": "Estadio Azteca",
+      "fecha": "2026-06-15",
+      "grupo": "j",
+      "local": "Portugal",
+      "visitante": "Congo"
+    },
+    {
+      "id": "partido-003",
+      "estadio": "Estadio Azteca",
+      "fecha": "2026-06-13",
+      "grupo": "A",
+      "local": "México",
+      "visitante": "Chequia"
+    },
+    {
+      "id": "partido-002",
+      "estadio": "Estadio Azteca",
+      "fecha": "2026-06-12",
+      "grupo": "A",
+      "local": "Korea",
+      "visitante": "Chequia"
+    },
+    {
+      "id": "partido-001",
+      "estadio": "Estadio Azteca",
+      "fecha": "2026-06-11",
+      "grupo": "A",
+      "local": "México",
+      "visitante": "Sudáfrica"
+    }
+  ],
+  "total": 4
+}
 
-
-## GET /partidos
-
-
-## GET /partidos/partido-001
-
+====================================================================
+GET /partidos/partido-001
+====================================================================
+curl https://abc123xyz.execute-api.us-east-1.amazonaws.com/prod/partidos/partido-001
+{
+  "id": "partido-001",
+  "estadio": "Estadio Azteca",
+  "fecha": "2026-06-11",
+  "grupo": "A",
+  "local": "México",
+  "visitante": "Sudáfrica"
+}
