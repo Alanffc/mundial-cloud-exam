@@ -1,4 +1,4 @@
-Repo GitHub:
+Repo GitHub: https://github.com/Alanffc/mundial-cloud-exam.git
 S3 web (Lab 2): http://mundial-web-flores.s3-website-us-east-1.amazonaws.com
-API Gateway base (Lab 3):
+API Gateway base (Lab 3): https://hz5xud7bje.execute-api.us-east-1.amazonaws.com/prod
 Kubernetes puerto 30080 (Lab 4):
